@@ -1,0 +1,14 @@
+<h1>Welcome {{name}}</h1>
+{{#if todos}}
+<h2>you have todos</h2>
+<ul>
+  {{#each todos}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+{{else}}
+<p>No todos 😕</p>
+{{/if}}
+{{#with address}}
+<p>{{street}} at {{number}}</p>
+{{/with}}
